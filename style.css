@@ -1,0 +1,54 @@
+body{
+    background-color: white;
+    text-align: center;
+}
+h1{
+ 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square{
+    position: relative;
+    width: 99px;
+    height: 87px;
+    background-color: white;
+    border: 1px solid white;
+  display: inline-block;
+}
+#jogodavelha{
+
+position: absolute;
+right: 300px;
+width: 300px;
+height: 300px;
+}
+.o{
+  position: relative;
+}
+
+.o::after{
+position: absolute ;
+content: "\26AB";
+font-size: 50px;
+line-height: 87px;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+
+.x{
+  position: relative;
+}
+
+.x::after{
+position: absolute ;
+content: "\2716";
+font-size: 50px;
+line-height: 87px;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+}
+ 
