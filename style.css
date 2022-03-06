@@ -51,4 +51,19 @@ right: 0;
 bottom: 0;
 left: 0;
 }
- 
+button {
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  color: var(--text-color);
+  text-shadow: 0 1px 15px var(--primary-color), 0 0px 30px var(--shade-primary),
+    0 0px 50px var(--shadow-primary);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff22;
+}
+
