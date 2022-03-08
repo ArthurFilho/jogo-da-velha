@@ -1,6 +1,6 @@
-// Após carregar a página, a interface salvará todos os elementos da classe "square" dentro da variável squares
+// After loading the page, the interface will save all the elements of the "square" class inside the squares variable
 
-// Depois com o forEach iremos varrer o array e adicionar um evento para cada square quando for clicado
+// Then with forEach we will scan the array and add an event for each square when clicked
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-// A função handleClick mostra qual quadrado foi clicado, a variável square recebe esse quadrado e identifica ele pela sua ID
+// The handleClick function shows which square was clicked, the square variable receives this square and identifies it by its ID
 
-// A função handleMove é executada e o jogador da vez terá seu símbolo colocado na tela
+// The handleMove function is executed and the current player will have their symbol placed on the screen
 
 function handleClick(event) {
   console.log(event.target);
@@ -23,12 +23,14 @@ function handleClick(event) {
   let position = square.id;
 
   if (handleMove(position)) {
-    alert("O Jogador " + playerTime + 1 + " Venceu!!" )
+    let h1 = document.getElementsByTagName("h1")
+
+    h1[0].innerHTML = ("The Player " + (playerTime + 1) + " Win!!" + "<br>" + "<h1> Tic Tac Toe</h1>" )
   };
   updateSquares();
 }
 
-// O forEach irá varrer os quadrados, receberá qual a posição desse quadrado e irá receber o que tem dentro do array board, caso o mesmo esteja preenchido com algum símbolo, ele irá atualizar no HTML
+// forEach will scan the squares, it will receive the position of that square and it will receive what is inside the board array, if it is filled with any symbol, it will update in the HTML
 
 
 function updateSquares() {
@@ -51,3 +53,11 @@ function btnClick() {
 }
 
 btnClick()
+
+
+function start(){
+ start = document.querySelector("#startgame")
+
+ start.style.display = "none";
+
+}

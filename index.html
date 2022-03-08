@@ -2,15 +2,20 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Jogo da velha</title>
+    <title>Tic Tac Toe</title>
 <link rel="stylesheet" href="./style.css">
-
+<link rel="icon" href="./assets/x.png">
 </head>
 <body>
-<H1>Jogo da Velha</H1>
+<H1 style="font-size:30px;">Tic Tac Toe</H1>
+
+
+<!-- Setting divs to the squares, each row has 3 squares. -->
+
+      <!-- Inside each square there is a div for each player -->
 
 <div class="stage">
-    <img id="jogodavelha" src="./assets/bosta.png" alt="jogodavelha">
+    
     
  <div>
  
@@ -33,8 +38,13 @@
        <div id="8" class="square"></div>
     </div>
 
+    <div id="startgame">
 
-
+      <div>
+         Start the game!!
+      </div>
+       <button id="start" onclick="start()"> Start </button>
+      </div>
     
     <button class="btn">Restart Game</button>
    

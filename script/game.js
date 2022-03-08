@@ -1,4 +1,4 @@
-// Iniciar variáveis
+// Start on varibles
 let board = ['', '', '', '', '', '', '', '', '',];
 let playerTime = 0;
 let symbols = ['o', 'x'];
@@ -16,7 +16,7 @@ let winStates = [
 ]
 
 
-// A função handleMove verifica quem fez o movimento e em qual quadrado ele fez o movimento, colocando assim um simbolo dentro do array de acordo com a vez do jogador.
+// The handleMove function checks who made the move and in which square he made the move, thus placing a symbol inside the array according to the player's turn.
 
 function handleMove(position) {
 
@@ -39,11 +39,11 @@ function handleMove(position) {
 }
 
 
-// Verificando se as combinações de jogadas são iguais as combinações vencedoras
+// Checking if the play combinations are the same as the winning combinations
 function isWin() {
 
 
-    // O for faz a verificação, se o a seq tiver os mesmos componentes que dão a vitória o jogo será finalizado
+    // The for checks, if the a seq has the same components that give the victory the game will be finished
     for (let i = 0; i < winStates.length; i++) {
         let seq = winStates[i];
 
@@ -70,7 +70,5 @@ function restart() {
         square.innerHTML = ""
     })
 
-    let h1 = document.getElementsByTagName("h1")
-
-    h1[0].innerHTML = "<h1>Jogo da velha</h1>"
+    
 }
