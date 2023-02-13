@@ -1,6 +1,6 @@
-<h1> Jogo da velha </h1>
+<h1> lading page Quentim Tarantino </h1>
 
-![image](https://user-images.githubusercontent.com/96798145/218567428-9dabdd4e-6511-4625-b2be-5f3ada99c996.png)
+![image](https://user-images.githubusercontent.com/96798145/218569403-322ada69-3492-4cb6-91e6-0f7b9875c46f.png)
 
 <h2> O que foi utilizado 💻 </h2>
 
